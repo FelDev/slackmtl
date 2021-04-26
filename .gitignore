@@ -1,2 +1,6 @@
 .DS_Store
 /PDF/too_large
+/static/PDF/too_large
+
+# eleventy
+_site
