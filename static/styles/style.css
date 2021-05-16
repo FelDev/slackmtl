@@ -23,7 +23,14 @@ body{
 .center * {
 	text-align: center;
 }
+.center {
+	text-align: center;
+}
 
+.subtitle {
+	font-size: 0.75rem;
+	font-weight: normal;
+}
 img{
 	border:none;
 }
