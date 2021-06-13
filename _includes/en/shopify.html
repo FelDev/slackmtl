@@ -91,7 +91,15 @@
         // "total": "sous-total",
         // "button": "Checkout"
       },
-      "popup": false
+      "popup": false,
+      "events": {
+        afterInit: (cart) => {
+          cart.onCheckout = () => {
+            const checkoutUrl = cart.model.webUrl + '&locale=en';
+            cart.checkout.open(checkoutUrl);
+          };
+        },
+      },
     },
     "toggle": {
       "styles": {

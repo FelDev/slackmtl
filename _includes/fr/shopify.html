@@ -95,7 +95,15 @@
         "empty": "Votre panier est vide.",
         "notice": "Livraison et taxes calculées à la caisse.",
       },
-      "popup": false
+      "popup": false,
+      "events": {
+        afterInit: (cart) => {
+          cart.onCheckout = () => {
+            const checkoutUrl = cart.model.webUrl + '&locale=fr';
+            cart.checkout.open(checkoutUrl);
+          };
+        },
+      },
     },
     "toggle": {
       "styles": {
