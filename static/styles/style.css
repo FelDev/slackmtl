@@ -533,7 +533,6 @@ h3{
 #language{
 	position:absolute;
 	z-index:3;
-	top:-30px;
 	float:right;
 	text-align:right;
 	box-shadow: 1px 3px 12px 0px rgba(0, 0, 0, 0.4);
