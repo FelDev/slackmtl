@@ -1,0 +1,41 @@
+<div>
+  <a href="/images/boutique/_high-res/kit_prim_25m.jpg"><img src="/images/boutique/kit_prim_25m.jpg"
+      alt="Beginner slackline kit" /></a>
+  <h3>1" Prim-25m<br>
+    <span class="subtitle">from Balance Community</span>
+  </h3>
+  <p class="center"><strong>Polyester Slackline</strong><br>
+    with 2-carabiner tensioning system
+  </p>
+  <h2>$129<strong>+tx.</strong></h2>
+  <center>
+    <div id='product-component-prim25' style="height:62px"></div>
+
+    <!-- <p class="red">SOLD OUT!</p> -->
+
+    <h2 class="video">
+      <a rel="noopener" href="https://www.youtube.com/watch?v=4bDSzFPHvxI" target="_blank">
+        installation video
+      </a>
+    </h2>
+  </center>
+
+  <!--<p class="red">SOLD OUT !</p>  -->
+  {%- if page.url == "/en/products/" %}
+  <ul style="text-align:left">
+    <li><strong>25 metres of polyester webbing (25mm wide) with 1 sewn loop</strong></li>
+    <li><strong>2 oval aluminium carabiners (21kN)</strong></li>
+    <li><strong>1 aluminium line lock</strong></li>
+    <li><strong>1 adjustable anchor (2 meters)</strong></li>
+    <li><strong>2 tree protectors</strong></li>
+  </ul>
+  {%- endif %}
+
+</div>
+
+{% for product in products %}
+<li>
+  {{product.name}}:</strong>
+  <a href="{{product.url}}">{{product.linkText}}</a>
+</li>
+{% endfor %}
