@@ -456,7 +456,7 @@ h3{
 	padding:0 2%;
 }
 
-#produits div{
+#produits > div{
 	position:relative;
 	float:left;
 	width:46%;
