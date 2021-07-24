@@ -27,7 +27,7 @@
         if (node) {
           ui.createComponent('product', {
             id: p.id,
-            node: document.getElementById('product-component-'+ p.name),
+            node: node,
             moneyFormat: '%24%7B%7Bamount%7D%7D',
             options: shopifyOptions,
           });
