@@ -1,4 +1,0 @@
-Sitemap: https://www.slacklinemtl.com/sitemap.xml
-
-User-agent: *
-Disallo

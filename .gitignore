@@ -1,6 +1,8 @@
+node_modules/
+.cache/
+public
+.env
 .DS_Store
-/PDF/too_large
-/static/PDF/too_large
-/node_modules
+
 # eleventy
-_site
+/eleventy/
