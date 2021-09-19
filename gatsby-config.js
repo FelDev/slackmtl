@@ -4,44 +4,49 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "slacklinemtl",
+    siteUrl: 'https://www.yourdomain.tld',
+    title: 'slacklinemtl',
   },
-  plugins: [{
-      resolve: "gatsby-source-shopify",
+  flags: {
+    DEV_SSR: false,
+  },
+  plugins: [
+    {
+      resolve: 'gatsby-source-shopify',
       options: {
-        // accessToken: ,
         password: process.env.SHOPIFY_ADMIN_PASSWORD,
-        storeUrl: "slacklinemtl.myshopify.com",
+        storeUrl: 'slacklinemtl.myshopify.com',
       },
     },
-    "gatsby-plugin-image",
+    'gatsby-plugin-image',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "UA-12707426-2",
+        trackingId: 'UA-12707426-2',
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    `gatsby-plugin-preact`,
+    'gatsby-plugin-no-sourcemaps',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/',
       },
-      __key: "images",
+      __key: 'images',
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: 'pages',
+        path: './src/pages/',
       },
-      __key: "pages",
+      __key: 'pages',
     },
   ],
-};
+}
