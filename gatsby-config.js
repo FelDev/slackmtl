@@ -11,6 +11,14 @@ module.exports = {
     DEV_SSR: false,
   },
   plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    // `gatsby-plugin-preact`,
+    'gatsby-plugin-no-sourcemaps',
     {
       resolve: 'gatsby-source-shopify',
       options: {
@@ -18,20 +26,12 @@ module.exports = {
         storeUrl: 'slacklinemtl.myshopify.com',
       },
     },
-    'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-12707426-2',
       },
     },
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-mdx',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    `gatsby-plugin-preact`,
-    'gatsby-plugin-no-sourcemaps',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
