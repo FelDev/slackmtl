@@ -1,54 +1,42 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Welcome to [Astro](https://astro.build)
 
-## 🚀 Quick start
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/snowpackjs/astro/tree/latest/examples/starter)
 
-1.  **Create a Gatsby site.**
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## 🚀 Project Structure
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+Inside of your Astro project, you'll see the following folders and files:
 
-2.  **Start developing.**
+```
+/
+├── public/
+│   ├── robots.txt
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   └── Tour.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-    Navigate into your new site’s directory and start it up.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-3.  **Open the code and start customizing!**
+Any static assets, like images, can be placed in the `public/` directory.
 
-    Your site is now running at http://localhost:8000!
+## 🧞 Commands
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+All commands are run from the root of the project, from a terminal:
 
-4.  **Learn more**
+| Command         | Action                                      |
+|:----------------|:--------------------------------------------|
+| `npm install`   | Installs dependencies                       |
+| `npm run dev`   | Starts local dev server at `localhost:3000` |
+| `npm run build` | Build your production site to `./dist/`     |
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 👀 Want to learn more?
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://astro.build/chat).

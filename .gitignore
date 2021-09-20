@@ -6,3 +6,19 @@ public
 
 # eleventy
 /eleventy/
+
+
+# Astro default .gitignore:
+# build output
+dist
+
+# dependencies
+.snowpack/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# environment variables
+.env
