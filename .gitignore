@@ -10,7 +10,7 @@ public
 
 # Astro default .gitignore:
 # build output
-# dist
+dist
 
 # dependencies
 .snowpack/
