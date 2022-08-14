@@ -1,3 +1,3 @@
-TODO: 
-- mailing list (https://emailoctopus.com/?urli=lWf4V)
-- Big Rewrite ...
+# Deprecated
+
+Here lies the code for the previous version of www.slacklinemtl.com.
